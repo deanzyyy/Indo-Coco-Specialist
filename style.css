@@ -1,0 +1,330 @@
+/* Hero Section */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#heroVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.container {
+  z-index: 1;
+  position: relative;
+}
+
+.hero-text {
+  text-align: start;
+}
+
+.hero-image {
+  max-width: 80%;
+  height: auto;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+  .hero-image {
+    max-width: 60%;
+  }
+}
+
+  
+  /* Navbar */
+  .navbar {
+    padding: 20px;
+  }
+  
+  .navbar-nav .nav-link {
+    color: #4d5f2f;
+    font-weight: 600;
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+    color: #4d5f2f;
+  }
+  
+  /* Parallax effect for About Section */
+/* Parallax effect for About Section */
+.parallax-section {
+  position: relative;
+  min-height: 100vh; /* Full-height section */
+  background: rgba(255, 255, 255, 0.592); /* Dark overlay */
+}
+
+.parallax-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('assets/bg.png'); /* Ganti dengan gambar yang sesuai */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: -1;
+}
+
+#about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+#about p {
+  color:#4d5f2f;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+#about img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; /* Rounded corners for the image */
+}
+
+.enlarged-img {
+  max-width: 90%; /* Increase the image width */
+  max-height: 800px; /* Set a larger maximum height */
+  border-radius: 10px; /* Optional: rounded corners */
+}
+
+.text-title{
+  font: size 4rem;
+  color:#4d5f2f;;
+  border-bottom:2px solid #4d5f2f;
+  padding:10px;
+}
+
+
+/* Our Products Section */
+.products-section {
+  background-color: white; /* Warna hijau gelap */
+  padding: 60px 0; /* Padding atas dan bawah */
+}
+
+.product-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animasi untuk transform dan shadow */
+  border: none; /* Menghapus border default */
+  border-radius: 10px; /* Rounded corners */
+  max-width: 300px; /* Mengatur ukuran maksimum kartu */
+  margin: 0 auto;
+}
+
+.product-card:hover {
+  transform: scale(1.05); /* Zoom in saat hover */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Drop shadow saat hover */
+}
+
+.product-card img {
+  border-radius: 10px 10px 0 0; /* Rounded corners untuk gambar */
+}
+
+.card-title {
+  color: #4CAF50; /* Warna judul putih */
+}
+
+.card-text {
+  color: #b9b9b9; /* Warna deskripsi abu-abu muda */
+}
+
+.btn-primary {
+  background-color: #4CAF50; /* Warna hijau untuk tombol */
+  border: none; /* Menghapus border */
+}
+
+.btn-primary:hover {
+  background-color: #45a049; /* Warna tombol saat hover */
+}
+
+.product-title{
+  font-weight: bold;
+  font-size:3rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color:#4d5f2f;
+}
+.product-desc{
+  color:rgb(151, 151, 151);
+}
+
+/* Get In Touch */
+.contact-section {
+  padding: 50px 0; /* Jarak atas dan bawah */
+  background-color: #f8f9fa; /* Warna latar belakang */
+}
+
+.contact-card {
+  background-color: #4d5f2f; /* Warna hijau gelap untuk kartu */
+  color: white; /* Warna teks putih */
+  border-radius: 10px; /* Sudut melengkung */
+  height:100%;
+}
+
+.contact-card .card-title {
+  margin-bottom: 20px; /* Jarak antara judul dan isi */
+  font-size: 3rem;
+  color:white;
+}
+
+.contact-section h2 {
+  margin-bottom: 20px; /* Jarak antara judul dan form */
+}
+
+.btn-primary {
+  background-color: #4d5f2f; /* Warna tombol sesuai tema */
+  border: none; /* Menghapus border default */
+}
+
+.btn-primary:hover {
+  background-color: #3b4b2b; /* Warna tombol saat hover */
+}
+
+.contact-card .card-body {
+  flex: 1; /* Mengizinkan body card untuk mengisi ruang yang tersisa */
+  display: flex; /* Menggunakan flexbox untuk konten dalam card */
+  flex-direction: column; /* Mengatur arah konten menjadi kolom */
+  justify-content: center; /* Menempatkan konten di tengah secara vertikal */
+  align-items: center; /* Menempatkan konten di tengah secara horizontal */
+  text-align: center; /* Memastikan teks di tengah secara horizontal */
+}
+
+
+
+
+
+/* GOOGLE MAP NJIR*/
+.map-section {
+  padding: 50px 0; /* Jarak atas dan bawah */
+  background-color: #f8f9fa; /* Warna latar belakang */
+  text-align: center; /* Menyelaraskan teks ke tengah */
+  color:#3b4b2b;
+}
+
+.map-container {
+  margin-top: 20px; /* Jarak atas untuk peta */
+}
+
+.map-section h1 {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  font-weight: bold;
+   /* Jarak antara judul dan peta */
+}
+
+.map-section p {
+  font-size: 1.25rem; /* Ukuran font untuk deskripsi lokasi */
+  margin-bottom: 30px; /* Jarak bawah untuk deskripsi */
+}
+
+
+
+/* FOOTER STYLE*/
+.footer {
+  background-color: #4d5f2f; /* Warna latar belakang */
+  color: white; /* Warna teks */
+  padding: 30px 0; /* Jarak atas dan bawah */
+}
+
+.footer p {
+  margin: 0; /* Menghapus margin default */
+}
+
+.social-icons {
+  margin-top: 10px; /* Jarak atas untuk ikon sosial */
+}
+
+.social-icon {
+  color: white; /* Warna ikon sosial */
+  margin: 0 10px; /* Jarak antara ikon */
+  font-size: 1.5rem; /* Ukuran ikon */
+  transition: color 0.3s; /* Efek transisi */
+}
+
+.social-icon:hover {
+  color: #a8d8b9; /* Warna saat hover */
+}
+
+
+
+/* Style untuk bagian Keunggulan Kami */
+.keunggulan-section {
+  background-color: #4d5f2f;
+  color:white;
+}
+
+.keunggulan-section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.keunggulan-section p {
+  font-size: 1.2rem;
+  color: #dadada;
+}
+
+/* Style untuk galeri */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  padding: 0 20px;
+}
+
+.gallery-item {
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px; /* Membuat rounded corner */
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 200px; /* Menentukan ukuran tetap untuk foto */
+  object-fit: cover; /* Memastikan foto tetap proporsional */
+  display: block;
+  border-radius: 10px; /* Membuat rounded corner pada foto */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
+
+
+select {
+  padding: 10px;  /* Ruang di dalam dropdown */
+  border: 1px solid #ccc;  /* Warna border */
+  border-radius: 5px;  /* Sudut membulat */
+  background-color: #fff;  /* Warna latar belakang dropdown */
+  font-size: 16px;  /* Ukuran font */
+  transition: border-color 0.3s;  /* Transisi halus untuk warna border */
+}
+
+/* Mengubah warna border ketika dropdown difokuskan */
+select:focus {
+  border-color: #25D366;  /* Warna border saat fokus, bisa disesuaikan */
+  outline: none;  /* Menghilangkan outline default */
+}
+
+/* Mengubah tampilan dropdown saat item dipilih */
+select option {
+  padding: 10px;  /* Ruang di dalam option */
+}
